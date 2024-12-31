@@ -1,5 +1,5 @@
 import "./globals.css";
-import Link from "next/link";
+
 export const metadata = {
   title: "Website Built with Next.js",
   description: "A beginner-friendly website built with Next.js",
@@ -11,13 +11,12 @@ export default function RootLayout({ children }) {
       <body>
         <header>
           <nav>
-            <Link href="/">Home</Link>
-            <Link href="/">About</Link>
-            <Link href="/">Contact</Link>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
           </nav>
         </header>
 
-        {/* Main Content */}
         <main>{children}</main>
 
         <footer>
